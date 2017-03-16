@@ -3,3 +3,6 @@ This repo is for communication SDK for both Android and IOS through NDK socket o
 
 # Android
 Android integration demo of this lib
+
+# SDK
+The SDK for C++ lib
