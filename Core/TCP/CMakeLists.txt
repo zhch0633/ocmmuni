@@ -5,8 +5,8 @@ project (Demo7)
 set (Demo_VERSION_MAJOR 1)
 set (Demo_VERSION_MINOR 0)
 
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
-SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 # 检查系统是否支持 pow 函数
 include (${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
@@ -20,8 +20,8 @@ configure_file (
 
 # 是否加入 MathFunctions 库
 # if (NOT HAVE_POW)
-    add_subdirectory (math)
-    set (EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
+add_subdirectory (math)
+set (EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
 # endif (NOT HAVE_POW)
 
 add_subdirectory(ocmtcp)
