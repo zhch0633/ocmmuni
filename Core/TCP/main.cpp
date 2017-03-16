@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "config.h"
+#include "build/config.h"
 #include "math/MathFunctions.h"
 int main(int argc, char *argv[])
 {

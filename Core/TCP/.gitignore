@@ -2,3 +2,4 @@ CMakeFiles/
 config.h
 *.cmake
 Demo
+/build
