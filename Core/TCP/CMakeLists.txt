@@ -26,7 +26,7 @@ endif (NOT HAVE_POW)
 aux_source_directory(. DIR_SRCS)
 
 # 指定生成目标
-add_executable(Demo ${DIR_SRCS} src/MathFunctions.cpp src/MathFunctions.h)
+add_executable(Demo ${DIR_SRCS} math/MathFunctions.cpp math/MathFunctions.h)
 target_link_libraries (Demo  ${EXTRA_LIBS})
 
 # 指定安装路径
