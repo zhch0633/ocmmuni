@@ -5,6 +5,9 @@ project (Demo7)
 set (Demo_VERSION_MAJOR 1)
 set (Demo_VERSION_MINOR 0)
 
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+
 # 检查系统是否支持 pow 函数
 include (${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
 check_function_exists (pow HAVE_POW)
@@ -16,10 +19,13 @@ configure_file (
 )
 
 # 是否加入 MathFunctions 库
-if (NOT HAVE_POW)
+# if (NOT HAVE_POW)
     add_subdirectory (math)
     set (EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
-endif (NOT HAVE_POW)
+# endif (NOT HAVE_POW)
+
+add_subdirectory(ocmtcp)
+set (OCMMUNI_TCP_LIB ${OCMMUNI_TCP_LIB} OCMMUNI_TCP)
 
 # 查找当前目录下的所有源文件
 # 并将名称保存到 DIR_SRCS 变量
@@ -28,6 +34,7 @@ aux_source_directory(. DIR_SRCS)
 # 指定生成目标
 add_executable(Demo ${DIR_SRCS} math/MathFunctions.cpp math/MathFunctions.h)
 target_link_libraries (Demo  ${EXTRA_LIBS})
+target_link_libraries (Demo ${OCMMUNI_TCP_LIB})
 
 # 指定安装路径
 install (TARGETS Demo DESTINATION bin)
