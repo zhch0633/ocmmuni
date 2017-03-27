@@ -21,6 +21,7 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
+        String ndkString = Entry.stringFromJNI();
         assertEquals("com.alipay.iap.ocmmuni.ocmmuni.test", appContext.getPackageName());
     }
 }

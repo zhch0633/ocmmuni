@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "build/config.h"
+#include "build/armeabi-v7a/config.h"
 #include "math/MathFunctions.h"
 #include "ocmtcp/lib/OcmmuniTCP.h"
 
