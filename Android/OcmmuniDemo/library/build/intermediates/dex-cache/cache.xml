@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_034587500e7141267e86d85c4cf03ffce616316b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_7177b81fd827ce7e716654e755b5059d474ffe63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_5a85e4b51df71d8e763b387ccbda98309e310d3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/android-sdks/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_6729c0fe61c7885712fa5e4baac5a8b779a31a53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_e3a6cde2f27894004066ad9405f2dceadd7f7389.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_11b964aca3cd6224d379b5c2868656c611d8504f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_7d68a42d2fec579fea36b6348a05e83201bfcb27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_9132214bd45a86517f524056c831062b26947ec9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_0b38055d8b98ce6b1a4832e4927523c816a07a5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/ali-classmate/develop/ocmmuni/Android/OcmmuniDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_38f65d8b3ad5368393e6eb17dc3e0a671cbc92b9.jar" />
+    </item>
+
+</items>

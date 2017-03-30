@@ -1,18 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include "build/armeabi-v7a/config.h"
-#include "math/MathFunctions.h"
-#include "ocmtcp/lib/OcmmuniTCP.h"
+#include <OcmmuniTCP.h>
+#include <MathFunctions.h>
 
 int main(int argc, char *argv[])
 {
     if (argc < 3){
         // print version info
-        printf("%s Version %d.%d\n",
-               argv[0],
-               Demo_VERSION_MAJOR,
-               Demo_VERSION_MINOR);
+        printf("%s Version\n", argv[0]);
         printf("Usage: %s base exponent \n", argv[0]);
         HelloFunc();
         return 1;
