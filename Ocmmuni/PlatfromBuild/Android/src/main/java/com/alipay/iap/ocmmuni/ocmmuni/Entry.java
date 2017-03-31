@@ -2,6 +2,7 @@ package com.alipay.iap.ocmmuni.ocmmuni;
 
 /**
  * Created by chen.zhang on 16/03/17.
+ * this is the entry to Ocmmuni
  */
 
 public class Entry {

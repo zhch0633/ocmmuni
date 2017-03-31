@@ -9,11 +9,14 @@ if(ANDROID)
     include_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/${ANDROID_ABI}/include)
     # 库位置
     link_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/${ANDROID_ABI}/bin)
-    else()
-    # Not Android situation for PC platform
-    include_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/include)
-    link_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/bin)
 endif()
+
+
+# 是否加入 MathFunctions 库
+# if (NOT HAVE_POW)
+set (EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
+# endif (NOT HAVE_POW)
+set (OCMMUNI_TCP_LIB ${OCMMUNI_TCP_LIB} OCMMUNI_TCP)
 
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
@@ -44,12 +47,6 @@ find_library( # Sets the name of the path variable.
               # you want CMake to locate.
               log )
 
-find_library( # Set name of the path
-
-              # Sets math functions
-              MathFunctions
-            )
-
 # Specifies libraries CMake should link to your target library. You
 # can link multiple libraries, such as libraries you define in the
 # build script, prebuilt third-party libraries, or system libraries.
@@ -61,3 +58,6 @@ target_link_libraries( # Specifies the target library.
                        # included in the NDK.
                        ${log-lib} )
 
+target_link_libraries (native-lib ${EXTRA_LIBS})
+
+target_link_libraries (native-lib ${OCMMUNI_TCP_LIB})
