@@ -4,20 +4,6 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
-# Copy Ocmmnui library core source code to temprary code route and
-# compile into a Android version library.
-
-if(ANDROID)
-    # 头文件位置
-    include_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/${ANDROID_ABI}/include)
-    # 库位置
-    link_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/${ANDROID_ABI}/bin)
-    else()
-    # Not Android situation for PC platform
-    include_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/include)
-    link_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/bin)
-endif()
-
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds it for you.
@@ -57,11 +43,3 @@ target_link_libraries( # Specifies the target library.
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )
-
-# Link Ocmmnui core external library Android.
-target_link_libraries(# Specifies the target library
-                      native-lib
-
-                      # Link the target library to the ocmmuni library
-                      # include in the NDK
-                      ${OCMMUNI_TCP} ）

@@ -1,6 +1,5 @@
 #include <jni.h>
 #include <string>
-#include <OcmmuniTCP.h>
 
 extern "C"
 jstring
