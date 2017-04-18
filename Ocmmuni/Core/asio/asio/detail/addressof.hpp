@@ -19,7 +19,7 @@
 
 #if defined(ASIO_HAS_STD_ADDRESSOF)
 # include <memory>
-#else // defined(ASIO_HAS_STD_ADDRESSOF)
+#else  //defined(ASIO_HAS_STD_ADDRESSOF)
 # include <boost/utility/addressof.hpp>
 #endif // defined(ASIO_HAS_STD_ADDRESSOF)
 

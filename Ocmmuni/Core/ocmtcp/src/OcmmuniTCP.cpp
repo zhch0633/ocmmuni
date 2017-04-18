@@ -10,8 +10,7 @@ using namespace asio;
 
 void HelloFunc(){
     asio::io_service io;
-    asio::deadline_timer t(io, boost::posix_time::seconds(5));
-    t.wait();
+
 
     std::cout << "Hello ASIO" << std::endl;
 }

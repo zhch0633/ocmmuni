@@ -31,6 +31,9 @@ if(ANDROID)
     # Not Android situation for PC platform
     include_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/include)
     link_directories(${CMAKE_INSTALL_PREFIX}/Ocmmuni/bin)
+
+    include_directories(asio)
+    include_directories()
 endif()
 
 # 是否加入 MathFunctions 库
