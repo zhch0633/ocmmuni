@@ -1,0 +1,1 @@
+echo foo | nc localhost 8080
