@@ -1,0 +1,3 @@
+/Users/ali-classmate/develop/ocmmuni/Server/build/CMakeFiles/edit_cache.dir
+/Users/ali-classmate/develop/ocmmuni/Server/build/CMakeFiles/rebuild_cache.dir
+/Users/ali-classmate/develop/ocmmuni/Server/build/CMakeFiles/Server.dir
