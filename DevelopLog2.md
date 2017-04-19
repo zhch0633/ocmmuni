@@ -60,3 +60,29 @@ endif()
 
 ```
 测试在安卓平台编译，没有发现问题。
+
+### BOOST 交叉编译
+对于安卓平台来说，编译必须来源于源码，而boost源码比较大，而且包含很多平台特有的特征，所以选择asio git 中的 C++11only branch 来直接编译，适配安卓开发，而服务端因为需要更好支持（服务端工作量更大)所以仍然保留BOOSt版本的 asio
+asio 通过配置可以处理依赖的容器和模板实现，具体参见 config.hpp 中的各个配置项目内容。
+
+```
+#ifndef ASIO_DETAIL_CONFIG_HPP
+#define ASIO_DETAIL_CONFIG_HPP
+
+# define ASIO_DISABLE_BOOST_ARRAY 0
+# define ASIO_DISABLE_BOOST_ASSERT 0
+# define ASIO_DISABLE_BOOST_BIND 0
+# define ASIO_DISABLE_BOOST_CHRONO 0
+# define ASIO_DISABLE_BOOST_DATE_TIME 0
+# define ASIO_DISABLE_BOOST_LIMITS 0
+# define ASIO_DISABLE_BOOST_REGEX 0
+# define ASIO_DISABLE_BOOST_STATIC_CONSTANT 0
+# define ASIO_DISABLE_BOOST_THROW_EXCEPTION 0
+# define ASIO_DISABLE_BOOST_WORKAROUND 0
+```
+
+config 会通过C++版本决定是否需要boost库，如果在cmake中声明用C++11编译则可以不用boost库编译而不发生编译问题。
+
+http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3388.pdf
+
+参见作者的这篇文章可以得到更多 C++ 11 实现asio的技能
