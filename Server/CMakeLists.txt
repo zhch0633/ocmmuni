@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
 project(Server)
 
-aux_source_directory(./examples/allocation DIR_LIB_SRCS)
+aux_source_directory(./src DIR_LIB_SRCS)
 
 # add boost to compilation of server
 SET(Boost_USE_STATIC_LIBS OFF)
