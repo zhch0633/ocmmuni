@@ -34,7 +34,7 @@ void tuttimer3()
 }
 
 int main() {
-    
+
     tuttimer3();
     return 0;
 }
